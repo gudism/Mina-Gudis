@@ -1,18 +1,43 @@
-/* CENTER CV */
-.cv {
-  text-align: center;
+/* GENERAL PAGE STYLING */
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: black;
+  line-height: 1.6;
 }
 
-/* TOP IMAGE */
-.top-image {
-  display: block;
-  margin: 40px auto;
-  max-width: 500px;
-  width: 50%;
-  height: auto;
+/* HEADER */
+header {
+  padding: 20px;
+  border-bottom: 1px solid black;
 }
 
-/* DROPDOWN */
+/* NAME AT TOP */
+h1 {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* DROPDOWN MENU */
 .dropdown {
   display: inline-block;
   position: relative;
@@ -23,9 +48,13 @@
   border: none;
   font-family: "Times New Roman", Times, serif;
   font-size: 1rem;
+  color: black;
   cursor: pointer;
   padding: 0;
-  margin-right: 15px;
+}
+
+.dropbtn:hover {
+  text-decoration: underline;
 }
 
 .dropdown-content {
@@ -33,14 +62,116 @@
   position: absolute;
   background: white;
   border: 1px solid black;
-  min-width: 160px;
+  min-width: 170px;
+  z-index: 10;
 }
 
 .dropdown-content a {
   display: block;
   padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background: #f2f2f2;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* MAIN CONTENT AREA */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* TOP IMAGE */
+.top-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 30px 0;
+}
+
+/* TWO COLUMNS FOR STATEMENT + BIO */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* HEADINGS */
+h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+/* PARAGRAPHS */
+p {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+/* CV SECTION */
+.cv {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cv p {
+  text-align: center;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* LINKS */
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* MOBILE FRIENDLY */
+@media (max-width: 700px) {
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  main {
+    padding: 15px;
+  }
 }
