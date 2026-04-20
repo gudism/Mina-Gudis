@@ -1,85 +1,46 @@
-/* GENERAL PAGE STYLING */
-body {
+/* CENTER CV */
+.cv {
+  text-align: center;
+}
+
+/* TOP IMAGE */
+.top-image {
+  display: block;
+  margin: 40px auto;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+/* DROPDOWN */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
   font-family: "Times New Roman", Times, serif;
-  margin: 0;
+  font-size: 1rem;
+  cursor: pointer;
   padding: 0;
-  background: white;
-  color: black;
-  line-height: 1.6;
-}
-
-/* HEADER */
-header {
-  padding: 20px;
-  border-bottom: 1px solid black;
-}
-
-/* NAME AT TOP */
-h1 {
-  margin: 0 0 10px 0;
-  font-size: 2rem;
-  font-weight: normal;
-}
-
-/* NAVIGATION */
-nav a {
   margin-right: 15px;
-  text-decoration: none;
-  color: black;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid black;
+  min-width: 160px;
 }
 
-/* MAIN CONTENT */
-main {
-  padding: 20px;
-  max-width: 800px;
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
 }
 
-/* SECTION HEADINGS */
-h2 {
-  margin-top: 40px;
-  margin-bottom: 15px;
-  font-size: 1.5rem;
-  font-weight: normal;
-}
-
-h3 {
-  margin-top: 25px;
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-  font-weight: normal;
-}
-
-/* PARAGRAPHS */
-p {
-  margin-bottom: 16px;
-  max-width: 650px;
-}
-
-/* LINKS */
-a {
-  color: black;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* LISTS (for work page) */
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-/* SMALL INTRO TEXT ON HOME PAGE */
-.intro {
-  font-size: 1.2rem;
-  max-width: 650px;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
