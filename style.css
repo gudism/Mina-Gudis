@@ -175,3 +175,40 @@ li {
     padding: 15px;
   }
 }
+/* PROJECT LAYOUT */
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* VIDEO */
+.project-media video {
+  width: 100%;
+  height: auto;
+}
+
+/* TEXT BLOCK */
+.project-info {
+  max-width: 500px;
+}
+
+/* TITLE */
+.project-info h3 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+/* MEDIUM */
+.medium {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+}
